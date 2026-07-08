@@ -47,27 +47,38 @@ event-registration-system/
 ```
 
 ## Setup
+1. Clone the repository
 
-1. **Install dependencies**
+```bash
+git clone https://github.com/ankit05630563-ankit/Event-registration-system.git
+```
+
+2. Navigate to the project folder
+
+```bash
+cd Event-registration-system
+```
+
+3. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. **Configure environment variables**
+4. **Configure environment variables**
 
    Copy `.env.example` to `.env` and fill in your values:
    ```bash
    cp .env.example .env
    ```
    ```
-   PORT=5000
-   MONGO_URI=mongodb://127.0.0.1:27017/event_registration
+   PORT=your_port
+   MONGO_URI=your_mongodb_connection_string
    JWT_SECRET=replace_this_with_a_long_random_secret
    JWT_EXPIRES_IN=7d
    ```
    For MongoDB Atlas, set `MONGO_URI` to your Atlas connection string instead.
 
-3. **Run the server**
+5. **Run the server**
    ```bash
    npm start        # production
    npm run dev       # development, with nodemon auto-reload
