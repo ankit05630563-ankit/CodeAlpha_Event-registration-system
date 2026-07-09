@@ -64,13 +64,8 @@ cd Event-registration-system
    npm install
    ```
 
-4. **Configure environment variables**
-
-   Copy `.env.example` to `.env` and fill in your values:
-   ```bash
-   cp .env.example .env
-   ```
-   ```
+4. **Create a `.env` file**
+   ```env
    PORT=your_port
    MONGO_URI=your_mongodb_connection_string
    JWT_SECRET=replace_this_with_a_long_random_secret
