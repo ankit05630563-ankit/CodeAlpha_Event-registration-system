@@ -73,13 +73,20 @@ cd Event-registration-system
    ```
    For MongoDB Atlas, set `MONGO_URI` to your Atlas connection string instead.
 
-5. **Run the server**
-   ```bash
-   npm start        # production
-   npm run dev       # development, with nodemon auto-reload
-   ```
+5. Start the server
 
-   The API will be running at `http://localhost:5000`.
+```bash
+node server.js
+```
+
+or (if using nodemon)
+
+```bash
+npm run dev
+```
+
+
+   
 
 ## API Reference
 
